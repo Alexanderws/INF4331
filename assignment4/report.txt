@@ -1,0 +1,12 @@
+Contest
+
+I decided on using the midpoint method and n= 100000000. Because Numba seemed to be the fastest in that range of n, that's what I used for the computations. My results are below.
+
+Function 1 - sum = 0.49999999999997635  N = 100000000
+Function 2 - sum = 0.4999999999999888  N = 100000000
+Function 3 - sum = 0.4999999999999958  N = 100000000
+Function 4 - sum = 0.5000000000000018  N = 100000000
+Function 5 - sum = 0.4999999999926465  N = 100000000
+Function 6 - sum = 0.49999999999965467  N = 100000000
+
+I checked the functions on WolframAlpha, and the answer seems to be 0.5, so the results I got are pretty close.

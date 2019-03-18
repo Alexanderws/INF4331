@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block plots %}
+
+<h2>Temperature plot</h2>
+<img src="data:image/png;base64,{{ temp_plot }}" alt="Temperature plot" style="width:800px;height:600px;">
+
+<h2>CO2 plot</h2>
+<img src="data:image/png;base64,{{ co2_plot }}" alt="CO2 plot" style="width:800px;height:600px;">
+
+{% endblock %}

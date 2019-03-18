@@ -1,0 +1,14 @@
+Integrator comparison using midpoint
+
+Below is the data from using methods in integrator_comparison.py to find the lowest value of n needed to calculate the area of the integral of sin(x) from 0 to pi.
+
+Python - sum = 2.0000000000999796  difference = 9.9979580170384e-11  N = 90681
+
+Numpy - sum = 2.0000000000999796  difference = 9.9979580170384e-11  N = 90681
+
+Numba - sum = 2.0000000000999796  difference = 9.9979580170384e-11  N = 90681
+
+Cython - sum = 2.0000000000999796  difference = 9.9979580170384e-11  N = 90681
+
+
+As the data shows, all methods have identical n values.

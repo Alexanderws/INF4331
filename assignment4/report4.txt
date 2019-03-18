@@ -1,0 +1,13 @@
+I ran both the normal, Python method, Numba and the one using Numpy a few times. Below are data gathered from all methods with n=100, n=100000 and n=10000000.
+
+[Python implementation, default method, n=100] finished in 0.06 ms
+[Numpy implementation, default method, n=100] finished in 0.21 ms
+[Numba implementation, default method, n=100] finished in 133.458 ms
+[Python implementation, default method, n=100000] finished in 56.406 ms
+[Numpy implementation, default method, n=100000] finished in 2.354 ms
+[Numba implementation, default method, n=100000] finished in 73.818 ms
+[Python implementation, default method, n=10000000] finished in 5187.446 ms
+[Numpy implementation, default method, n=10000000] finished in 141.067 ms
+[Numba implementation, default method, n=10000000] finished in 87.82 ms
+
+With n=100 and n=100000, Numba performed worse than the other two methods. Therefore I ran the test with n=10000000. The results seem to suggest that while Numba has a pretty consistent "start-up" time, it stays around 70-80 ms even though n reaches very high values. So it seems like Numba is only beneficial for very high values of n.

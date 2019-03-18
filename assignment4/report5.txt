@@ -1,0 +1,12 @@
+I ran both the normal, Python method, Numba, Cython and the one using Numpy a few times. Below are data gathered from all methods with n=100 and n=100000.
+
+[Python implementation, default method, n=100] finished in 0.058 ms
+[Numpy implementation, default method, n=100] finished in 0.193 ms
+[Numba implementation, default method, n=100] finished in 128.465 ms
+[Cython implementation, default method, n=100] finished in 0.051 ms
+[Python implementation, default method, n=100000] finished in 56.211 ms
+[Numpy implementation, default method, n=100000] finished in 1.103 ms
+[Numba implementation, default method, n=100000] finished in 68.897 ms
+[Cython implementation, default method, n=100000] finished in 23.949 ms
+
+Cython seems to perform very well with low n values, but with n=100000 the Numpy method is superior. At this level Cython still outperforms pure Python and Numba however.
